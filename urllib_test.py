@@ -61,28 +61,27 @@ def From_URL_fileopen(target_url):
 				print f.read()
 
 		except IOError:
-        	raise ValueError("The URL supplies unsupported file format: %s" % (options.upload) )		
+        	raise ValueError("The URL supplies unsupported file format: %s" % (options.upload) )
 			
 From_URL_fileopen(target_url)
 #should return text of WebLogo's open source license
 
 
-
-# Here's our "unit tests".
+#pseudo unit test
 class FromURLfileopen_Tests(unittest.TestCase):
 
     def test_URLscheme(self):
     	"""test for http, https, or ftp scheme"""
-    	target_url = "htp."
+    	broken_url = "htp://www.dropbox.com"
+    	self.assertEqual(self.From_URL_fileopen(broken_url),
+                         'Cannot open url')
 
-        self.assertEqual()
-
-    def test_netlocation(self):
-    	net_location = "wwww.dropbox.com"
 
     def URLfile_extension_test(self):
     	"""tests if file extension from URL is accepted format"""
-        self.failIf(IsOdd(2))
+    	file_ext = ".prr"
+        self.assertEqual((self.From_URL_fileopen()
+                         'URL supplies unsupported file format')
 
 def main():
     unittest.main()
