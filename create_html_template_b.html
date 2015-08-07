@@ -3,17 +3,18 @@
   <head>
     <title>WebLogo 3 - Create </title>
 
+    <!--base responsive code-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <!--original meta data-->
     <meta name="author" content="Gavin E. Crooks" >
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <link rel="stylesheet" type="text/css" href="logo.css" >
     <title>WebLogo Create Layout Template</title>
  
-    <!--styling for error messages-->
+    <!--styling for error message for sequence input-->
     <style type="text/css"> 
         .error { 
             color: #900;
@@ -34,9 +35,8 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-
+    <!-- ========Start Bootstrap dependencies ==========-->
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -45,6 +45,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- ========= end Bootstrap dependencies======= -->
 
 
     <!--Dropbox APIs-->
@@ -67,7 +68,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Web Logo 3</a>
+              <a class="navbar-brand" href="#">WebLogo 3</a>
             </div>
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
@@ -90,7 +91,7 @@
           <div class="row"> <!--open sequence data form row-->
             <div class="col-sm-1"><br></div> <!--left margin column for sequence data form -->
 
-            <div class="col-sm-10 clearfix"> <!--central column for sequence data form-->
+            <div class="col-sm-10"> <!--central column for sequence data form-->
               <div class="thumbnail clearfix" id="thumbnail-1"> <!--open thumbnail 1 div-->
                     <h2> Sequence Data Input:</h2> 
                     <hr>
@@ -110,7 +111,6 @@
                               });                  
                           </script>
                           
-
                           <!--start Dropbox javascript functions-->
                           <script type="text/javascript"> 
                                       
@@ -152,7 +152,7 @@
                       </div> <!--end dropbox-container div-->
 
                       <div class="form-group col-sm-4" id="google drive container"> <!--start google drive container div-->
-                        <button class="btn btn-default btn-sm" <span class=" glyphicon glyphicon-folder-open"> </span>Browse Google Drive</button>
+                        <button class="btn btn-default btn-sm" <span class=" glyphicon glyphicon-folder-open"> </span>Open file from URL</button>
 
                        <!--google drive functions-->
                         <script> 
@@ -183,7 +183,6 @@
                            download_url = file['webContentLink'];
                         </script>
 
-
                       </div>
 
                     </div><!--end clearfix div for browse & dropbox buttons-->
@@ -194,8 +193,8 @@
                       </textarea>
                     </div><!--close paste seqence data textbox-->
 
-                    <div class="form-group row clearfix"> <!--Start clearfix div for Download and Dropbox button-->
-                      <div class ="col-sm-6"> <!--start create&clear button column-->
+                    <div class="form-group row"> <!--Start clearfix div for Download and Dropbox button-->
+                      <div class ="col-sm-10"> <!--start create&clear button column-->
                         <div class="form-group"> <!--open create&clear button div-->
                           <button class="btn btn-success btn-md" type="submit" name="cmd_create"> 
                             <span class="glyphicon glyphicon-ok"></span> Create WebLogo
@@ -206,41 +205,31 @@
 
                       </div> <!--end .col-sm-6 create&clear button column-->
                       
-                      <div class ="col-sm-6"> <!--start spacing div for download/email checkboxes-->
+                      <div class ="col-sm-2"> <!--start spacing div for download/email checkboxes-->
                                               
                         <div > <!--start download checkbox div-->
                           <label>
                             <input type="checkbox" name="download" value="false">Download
                           </label>
                         </div> <!--end download checkbox div div-->
+                       
+                       </div> 
                         
-                        <div class="clearfix" "col-sm-6"> <!--start email functions div-->
-
-                          <div "col-sm-6" "clearfix"><!--start email checkbox &  input-->
-                            <input type="checkbox" id="email-checkbox" name="email" value="false">
-                            <label>email logo</label> </div>
-                            <div class="input-group" "col-sm-6">
-                             <input type="text" class="form-control" name="user_email" maxlength=40 placeholder="your_email@here" aria-describedby="basic-addon3">
-                            </div>
-                                                     
-                        </div>   <!--end start email checkbox &  input div-->
-
-                      </div> <!--end col sm-4 spacing div for download/email checkboxes-->
-
-                    </div> <!--End clearfix row div for Download and Dropbox button-->                            
+                      </div> <!--End clearfix row div for Download and Dropbox button-->                            
                      
                   </div><!--end clearfix #thumbnail-1 div-->
 
-              </div> <!--end col-sm-10 central column for sequence data form-->
+            </div> <!--end col-sm-10 central column for sequence data form-->
                           
-              <div class="col-sm-1"><br></div>
-            </div>
+            
+            <div class="col-sm-1"><br></div>
           </div> <!--end sequence data form row-->
-                
+
+            
           <div class="row"> <!--start row for logo options-->
-                <div class="col-sm-1"><br></div><!--left column margin for logo options form-->
-                <div class="col-sm-10"> <!--central col-sm-10 logo options column-->
-                    <div class="thumbnail clearfix col-sm-6" id="thumbnail-2"> <!--start thumbnail-2 div; left side logo options-->                        
+            <div class="col-sm-1"><br></div><!--left column margin for logo options form-->
+              <div class="col-sm-10" id="wrap"> <!--central col-sm-10 logo options column-->
+                <div class="thumbnail col-sm-6" id="thumbnail-2"> <!--start thumbnail-2 div; left side logo options-->                        
                       <div class="form-group"><!--open title div-->
                         <form method="post" action="create.cgi">
                             <label>Title:</label>
@@ -355,7 +344,7 @@
 
                     </div> <!--close 2nd thumbnail column-->
 
-                    <div class="thumbnail clearfix col-sm-6" id="thumbnail-3"> <!--start third thumbnail ; right side logo options-->
+                    <div class="thumbnail col-sm-6" id="thumbnail-3"> <!--start third thumbnail ; right side logo options-->
                       
                       <div class="form-group"> <!--start Sequence Ends labels:div-->
                         <label>Show Sequence Ends labels:</label>
@@ -435,10 +424,7 @@
                         <!--Reset defaults must come after create_logo so that hitting enter creates a logo-->
                         <button type="submit" class="btn btn-default btn-sm" name="cmd_reset" value="&    nbsp;Create&nbsp;Logo&nbsp;&nbsp;&nbsp;&nbsp;"> Reset Defaults 
                         </button>                           
-                      </div><!--end reset defaults div-->
-
-                      
-
+                      </div><!--end reset defaults div-->                     
                     </div> <!--close 3rd thumbnail group-->
 
                     <div class="thumbnail clearfix" id="thumbnail-4"><!--start 4th thumbnail group-->              
@@ -453,13 +439,12 @@
                
                 </div><!--end col-sm-10 central logo options column-->
                 
-                <div class="col-sm-1"><br></div><!--right column margin for logo options form-->
-
-                
+                <div class="col-sm-1"><br></div><!--right column margin for logo options form-->               
 
           </div> <!--end row for logo options-->
 
         </form> <!--end WebLogo form-->
+        <div class="footer row" id="footer"><br></div>
 
       </div> <!--end outermost row container-->
         
