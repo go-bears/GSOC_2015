@@ -25,7 +25,7 @@ def From_URL_fileopen(target_url):
 		print scheme
 
 	except IOError:
-        raise ValueError("Cannot open url: %s" % (options.upload) )
+        	raise ValueError("Cannot open url: %s" % (options.upload) )
 
 	#checks for dropbox link
 	if net_location == 'www.dropbox.com':
@@ -39,7 +39,7 @@ def From_URL_fileopen(target_url):
 			target_url = dl_url #overwrites target_url with direct download url
 		
 		except IOError:
-        	raise ValueError("Cannot open dropbox url: %s" % (options.upload) )
+        		raise ValueError("Cannot open dropbox url: %s" % (options.upload) )
 
 	#retrieves file from download link to local machine
 	retrieved = urllib.urlretrieve(target_url)
@@ -51,20 +51,19 @@ def From_URL_fileopen(target_url):
 	file_ext = os.path.splitext(file_path)[-1].lower()
    
    # checks for usable file type
-    file_types = [".txt", ".pir", ".msf", ".phy", ".fasta", \
-    			".flat", ".aln", ".nx", ".nex"]
+   
 
-	if file_ext in file_types:
+	if file_ext == ".txt" or ".pir" or ".msf" or ".phy" or ".fasta", \
+    			".flat" or ".aln" or ".nx" or ".nex"
 		try:
 			#opens file to be read
 			with open(file_path) as f:
 				print f.read()
 
 		except IOError:
-        	raise ValueError("The URL supplies unsupported file format: %s" % (options.upload) )		
+        		raise ValueError("The URL supplies unsupported file format: %s" % (options.upload) )		
 			
-From_URL_fileopen(target_url)
-#should return text of WebLogo's open source license
+From_URL_fileopen(target_url) #should return text of WebLogo's open source license
 
 
 
