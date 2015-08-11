@@ -10,6 +10,7 @@ import weblogolib
 target_url = 'https://www.dropbox.com/s/qgfto1ipfnxh0pq/LICENSE.txt?dl=0'
 
 def From_URL_fileopen(target_url):
+<<<<<<< HEAD
     """allows WebLogo to open files from URL locations"""
 
     #parsing url in component parts
@@ -35,6 +36,64 @@ def From_URL_fileopen(target_url):
    
     # checks for usable file type
     file_types = weblogolib._seq_extensions() 
+=======
+	"""allows WebLogo to open files from URL locations"""
+
+	#parsing url in component parts
+	parsed_header = urlparse(target_url)
+	scheme = parsed_header[0]
+	net_location = parsed_header[1] 
+	path = parsed_header[2]
+	param = parsed_header[3]
+	query = parsed_header[4]
+
+	#checks if string is URL link
+	
+	if scheme == "http" or "https" or "ftp":
+	try:
+		print scheme
+
+	except IOError:
+        	raise ValueError("Cannot open url: %s" % (options.upload) )
+
+	#checks for dropbox link
+	if net_location == 'www.dropbox.com':
+		#changes dropbox http link into download link
+		try:
+			if query == "dl=0":
+				query2 = "dl=1"
+
+			#rebuild download URL, with new query2 variable
+			dl_url = urlunparse((scheme, net_location, path, param, query2,""))
+			target_url = dl_url #overwrites target_url with direct download url
+		
+		except IOError:
+        		raise ValueError("Cannot open dropbox url: %s" % (options.upload) )
+
+	#retrieves file from download link to local machine
+	retrieved = urllib.urlretrieve(target_url)
+
+	#urlretrieve returns a tuple: (local file location, HTTPMessage instance )
+	file_path = retrieved[0] 
+	
+	# Splits file extension from the path and normalizes it to lowercase.
+	file_ext = os.path.splitext(file_path)[-1].lower()
+   
+   # checks for usable file type
+   
+
+	if file_ext == ".txt" or ".pir" or ".msf" or ".phy" or ".fasta", \
+    			".flat" or ".aln" or ".nx" or ".nex"
+		try:
+			#opens file to be read
+			with open(file_path) as f:
+				print f.read()
+
+		except IOError:
+        		raise ValueError("The URL supplies unsupported file format: %s" % (options.upload) )		
+			
+From_URL_fileopen(target_url) #should return text of WebLogo's open source license
+>>>>>>> 1354487d9831f234a1b044d901aae4bfbd62359a
 
         #retrieves file from download link to local machine
     retrieved = urllib.urlretrieve(target_url)
@@ -75,4 +134,8 @@ class From_URL_fileopen_Tests(unittest.TestCase):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     unittest.main()
+=======
+    main()
+>>>>>>> 1354487d9831f234a1b044d901aae4bfbd62359a
