@@ -711,6 +711,25 @@
 
     </div><!--OutermostContainer end-->
 
+        <!--fallback to server-hosted files in case CDNs fail-->
+    <script>
+
+      if (typeof jQuery == 'undefined') {
+          //fallback for JQuery
+          document.write(unescape("%3Cscript src='.../scripts/jquery-1.11.3/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+
+          //fallback for Fluidbox
+          document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.js' type='text/javascript'%3E%3C/script%3E"));
+          document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.min.js' type='text/javascript'%3E%3C/script%3E"));
+
+          //fallback for Bootstrap
+          document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
+          document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"));
+          document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css' %3Clink")); 
+          document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css' %3Clink")); 
+          }
+    </script>
+
 
     <!--google analytics-->
 
