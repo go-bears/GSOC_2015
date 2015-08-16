@@ -1,108 +1,117 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
    "http://www.w3.org/TR/html4/loose.dtd">
- 
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="logo.css" >
-        <title>WebLogo 3 - Examples</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        <meta name="author" content="Gavin E. Crooks" >
-        <meta name="author" content="Steven E. Brenner" >
-        <meta name="ID" content="$ID:" >
 
-        <!-- Latest compiled and minified Bootstrap CSS -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="logo.css">
+    <title>WebLogo 3 - Examples</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Gavin E. Crooks">
+    <meta name="author" content="Steven E. Brenner">
+    <meta name="ID" content="$ID:">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--jquery libraries-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-        <!-- Latest compiled and minified Bootstrap -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-        <!--jquery libraries-->
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    </head>
-
-    <body>
-        <!--nav bar-->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation"><!--start nav bar-->
-            <div class="container">  <!--start nav bar container-->
-                <div class="navbar-header"> <!--start nav bar header-->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">WebLogo 3</a>
-                </div><!--close nav bar header-->
-                <div class="collapse navbar-collapse"><!--start nav-collapse -->
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="create.cgi">create</a></li>
-                        <li class="active"><a href="examples.html">examples</a></li> 
-                        <li><a href="manual.html">manual</a></li>
-                    </ul>
-                </div><!--close .nav-collapse -->
-          </div> <!--close nav bar container-->
-        </div> <!--close nav bar-->
-
-        <div class="container-fluid"> <!--outermost content container-->
-
-            <!--off set top margin to keep content clear from nav bar-->
-            <div class="row"><!--outermost row container-->
-        
-                <div class="col-sm-1"></div>  <!--outer column margin left-->
-
-                <div class="col-sm-10"> <!--Central body col-sm-10 column-->
-
-                    <div class="row"> <!-- Gallery Intro Row Container-->
-                        <div class="col-sm-12"><h1 id="Gallery-header">WebLogo 3 Gallery</h1><!--start Gallery example links-->
-
-                            <div class="col-sm-6"> <!--start example links column left-->
-                                <ul>
-                                  <li> <a href="#CAP">CAP HTH motif</a> </li>
-                                  <li> <a href="#trans">Transcription Factor Binding Sites</a> </li>
-                                  <li> <a href="#promoters"><i>E. coli</i> Promoters</a> </li> 
-                                </ul>
-                            </div> <!--close example links column left-->
-
-                            <div class="col-sm-6"> <!-- example links column right-->
-                              <ul>
-                                <li> <a href="#globins">Globins</a>  </li>
-                                <li> <a href="#HTH">HTH motif</a>  </li>
-                                <li> <a href="#splice">Human Splice Sites</a> </li> 
-                              </ul>
-                            </div>
-                        
-                            The <strong>Edit Logo</strong> buttons will transfer the relevant sequence data to the <a class="in" href="create.cgi">Logo creation form</a>.  There you can examine the sequence data and recreate the logo for yourself. Additional examples can be found at the <a href="http://www.lecb.ncifcrf.gov/~toms/sequencelogo.html">Sequence Logo Gallery</a>.
-                        </div> <!--close gallery example links-->
-
-                    </div><!--Close Gallery Intro Row Container -->
-                    
-                    <div class="row" id="padding-div"> <hr> </div>
-
-                    <div class="row"> <!-- Example Gallery Row Container--> 
-
-                        <div class="col-sm-12"> <!--Example Gallery content column-->
-                        
-                            <div class="row"> <a name="CAP"></a> <a name="CAP_HTH"></a><!--CAP row Container-->
-                                <!--how to center CAP title? -->
-                                
-                                <div class="col-sm-6" id="weblogo-examples"> <!--CAP column left container-->
-                                    <h3>Catobolite Activator Protein (CAP)</h3>
-                                    <div class="image-div">  <!--image container-->
-                                        <a href="examples/cap_hth.png" data-fluidbox  id="fluidbox-1">
-                                            <img src="examples/cap_hth.png" alt="" class="img-responsive" title="Catobolite Activator Protein " alt="Catobolite Activator Protein "></a>
-                                    </div>       
-                                                                  
-                                    <div class="text-div"> <!--CAP example text-->
-                                                    The helix-turn-helix motif from the CAP family of homodimeric DNA binding proteins.  CAP (Catabolite Activator Protein, also known as CRP for cAMP Receptor Protein) is a transcription promoter that binds at more than 100 sites within the <i>E.&nbsp;coli</i> genome. 
-                                                    Residues 1-7 form the first helix, 8-11 the turn and 12-20 the DNA recognition helix.  The glycine at position 9 appears to be critical in forming the turn.  Positions 4, 8, 10, 15 and 19 are partially or completely buried, and therefore tend to be populated by hydrophobic amino acids, which are colored black.  Positions 11-14, 17 and 20 interact directly with bases in the major groove and are critical to the sequence specific binding of the protein.  The data for this logo consists of 100 sequences from the full Pfam alignment of this family (Accession number PF00325).  A few sequences with rare insertions were removed for convenience.
-                                    </div> <!--CAP example text div end-->
-
-                                        <!--
+<body>
+    <!--nav bar-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!--start nav bar-->
+        <div class="container">
+            <!--start nav bar container-->
+            <div class="navbar-header">
+                <!--start nav bar header-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebLogo 3</a>
+            </div>
+            <!--close nav bar header-->
+            <div class="collapse navbar-collapse">
+                <!--start nav-collapse -->
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="create.cgi">create</a></li>
+                    <li class="active"><a href="examples.html">examples</a></li>
+                    <li><a href="manual.html">manual</a></li>
+                </ul>
+            </div>
+            <!--close .nav-collapse -->
+        </div>
+        <!--close nav bar container-->
+    </div>
+    <!--close nav bar-->
+    <div class="container-fluid">
+        <!--outermost content container-->
+        <!--off set top margin to keep content clear from nav bar-->
+        <div class="row">
+            <!--outermost row container-->
+            <div class="col-sm-1"></div>
+            <!--outer column margin left-->
+            <div class="col-sm-10">
+                <!--Central body col-sm-10 column-->
+                <div class="row">
+                    <!-- Gallery Intro Row Container-->
+                    <div class="col-sm-12">
+                        <h1 id="Gallery-header">WebLogo 3 Gallery</h1>
+                        <!--start Gallery example links-->
+                        <div class="col-sm-6">
+                            <!--start example links column left-->
+                            <ul>
+                                <li> <a href="#CAP">CAP HTH motif</a> </li>
+                                <li> <a href="#trans">Transcription Factor Binding Sites</a> </li>
+                                <li> <a href="#promoters"><i>E. coli</i> Promoters</a> </li>
+                            </ul>
+                        </div>
+                        <!--close example links column left-->
+                        <div class="col-sm-6">
+                            <!-- example links column right-->
+                            <ul>
+                                <li> <a href="#globins">Globins</a> </li>
+                                <li> <a href="#HTH">HTH motif</a> </li>
+                                <li> <a href="#splice">Human Splice Sites</a> </li>
+                            </ul>
+                        </div>
+                        The <strong>Edit Logo</strong> buttons will transfer the relevant sequence data to the <a class="in" href="create.cgi">Logo creation form</a>. There you can examine the sequence data and recreate the logo for yourself. Additional examples can be found at the <a href="http://www.lecb.ncifcrf.gov/~toms/sequencelogo.html">Sequence Logo Gallery</a>.
+                    </div>
+                    <!--close gallery example links-->
+                </div>
+                <!--Close Gallery Intro Row Container -->
+                <div class="row" id="padding-div">
+                    <hr> </div>
+                <div class="row">
+                    <!-- Example Gallery Row Container-->
+                    <div class="col-sm-12">
+                        <!--Example Gallery content column-->
+                        <div class="row">
+                            <a name="CAP"></a>
+                            <a name="CAP_HTH"></a>
+                            <!--CAP row Container-->
+                            <!--how to center CAP title? -->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <!--CAP column left container-->
+                                <h3>Catobolite Activator Protein (CAP)</h3>
+                                <div class="image-div">
+                                    <!--image container-->
+                                    <a href="examples/cap_hth.png" data-fluidbox>
+                                        <img src="examples/cap_hth.png" class="img-responsive" title="Catobolite Activator Protein " alt="Catobolite Activator Protein " id="fluidbox-1"></a>
+                                </div>
+                                <div class="text-div">
+                                    <!--CAP example text-->
+                                    The helix-turn-helix motif from the CAP family of homodimeric DNA binding proteins. CAP (Catabolite Activator Protein, also known as CRP for cAMP Receptor Protein) is a transcription promoter that binds at more than 100 sites within the <i>E.&nbsp;coli</i> genome. Residues 1-7 form the first helix, 8-11 the turn and 12-20 the DNA recognition helix. The glycine at position 9 appears to be critical in forming the turn. Positions 4, 8, 10, 15 and 19 are partially or completely buried, and therefore tend to be populated by hydrophobic amino acids, which are colored black. Positions 11-14, 17 and 20 interact directly with bases in the major groove and are critical to the sequence specific binding of the protein. The data for this logo consists of 100 sequences from the full Pfam alignment of this family (Accession number PF00325). A few sequences with rare insertions were removed for convenience.
+                                </div>
+                                <!--CAP example text div end-->
+                                <!--
                                         # Pfam 7.1 crp
                                         # Accession number: PF00325
                                         # Bacterial regulatory proteins, crp family
@@ -129,21 +138,21 @@
                                         # First Helix: 1-7, Turn: 8-11, 2nd (DNA recognition) 12-20
                                         #
                                       -->
-
-                                    <div class="edit-logo-btn"> <!--Edit Logo button for DNA-binding helix-turn-helix motif of the CAP family-->
-                                        <form method="post" action="create.cgi"> 
-                                            <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> DNA-binding helix-turn-helix motif of the CAP family
-                                            <input type="hidden" name="logo_title" value="The DNA-binding helix-turn-helix motif of the CAP family" >
-                                            <input type="hidden" name="first_index" value="-5" >
-                                            <input type="hidden" name="logo_start" value="1" >
-                                            <input type="hidden" name="logo_end" value="20" >
-                                            <input type="hidden" name="show_xaxis" value="true" >
-                                            <input type="hidden" name="show_yaxis" value="true" >
-                                            <input type="hidden" name="show_errorbars" value="true" >
-                                            <input type="hidden" name="show_fineprint" value="true" >
-                                            <input type="hidden" name="scale_width" value="true" >
-                                            <input type="hidden" name="stack_width" value="large" >
-                                            <input type="hidden" name="sequences" value=">Q9EXQ1/196-227 
+                                <div class="edit-logo-btn">
+                                    <!--Edit Logo button for DNA-binding helix-turn-helix motif of the CAP family-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> DNA-binding helix-turn-helix motif of the CAP family
+                                        <input type="hidden" name="logo_title" value="The DNA-binding helix-turn-helix motif of the CAP family">
+                                        <input type="hidden" name="first_index" value="-5">
+                                        <input type="hidden" name="logo_start" value="1">
+                                        <input type="hidden" name="logo_end" value="20">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="sequences" value=">Q9EXQ1/196-227 
                                                 LTMT.-RGDIGNYLGLTVETISRLLGRFQKLGVL
                                                 >Q46158/72-92 
                                                 LTMT.-RGDIGNYLGLTVETISR-----------
@@ -345,45 +354,44 @@
                                                 -NLP.-HRELSSISGLARETVTRCLTKLEKRGLI
                                                 >Q981X4/78-109 
                                                 AKVT.-HDQIAAMVGSTRQWVTMMMKRFQKEGLV
-                                                " >
-                                        </form>
-                                    </div> <!--close CAP edit logo button div-->
-
-                                </div><!--close CAP col 6 left container-->
-
-                                <div class="col-sm-6" id="weblogo-examples"><!--CAP column right container-->
-                                    <div id="padding-div"></div>
-
-                                    <!--start cap_dna img-->
-                                    <div class="image-div">
-                                        <a href="examples/cap_dna.png" data-fluidbox><img src="examples/cap_dna.png" class="img-responsive" alt="CAP Binding Site Logo" ></a>
-                                    </div> <!--end cap_dna img-->
-                                
-                                    <div class="text-div"><!--start cap_dna text div-->
-                                        The two DNA recognition helixes of the CAP homodimer insert themselves into consecutive turns of the major groove.  Several consequences can be observed in this CAP binding site logo.  The logo is approximately palindromic, which provides two very similar
-                                        recognition sites, one for each subunit of the dimer. However, the binding site is not perfectly symmetric, possible due to the inherent asymmetry of the operon promoter region.
-
-                                        <p>The displacement of the two parts is 11 base pairs, or approximately one full turn of the DNA helix.  Additional interactions between the protein and the first and last two bases occur within the DNA minor groove, where it is difficult for the protein to distinguish A from T, or G from C.</p>
-
-                                        <p>The data for this logo consists of 59 binding sites determined by DNA footprinting:</p> 
-                                        <cite><small><p>
+                                                ">
+                                    </form>
+                                </div>
+                                <!--close CAP edit logo button div-->
+                            </div>
+                            <!--close CAP col 6 left container-->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <!--CAP column right container-->
+                                <div id="padding-div"></div>
+                                <!--start cap_dna img-->
+                                <div class="image-div">
+                                    <a href="examples/cap_dna.png" data-fluidbox><img src="examples/cap_dna.png" class="img-responsive" alt="CAP Binding Site Logo"></a>
+                                </div>
+                                <!--end cap_dna img-->
+                                <div class="text-div">
+                                    <!--start cap_dna text div-->
+                                    The two DNA recognition helixes of the CAP homodimer insert themselves into consecutive turns of the major groove. Several consequences can be observed in this CAP binding site logo. The logo is approximately palindromic, which provides two very similar recognition sites, one for each subunit of the dimer. However, the binding site is not perfectly symmetric, possible due to the inherent asymmetry of the operon promoter region.
+                                    <p>The displacement of the two parts is 11 base pairs, or approximately one full turn of the DNA helix. Additional interactions between the protein and the first and last two bases occur within the DNA minor groove, where it is difficult for the protein to distinguish A from T, or G from C.</p>
+                                    <p>The data for this logo consists of 59 binding sites determined by DNA footprinting:</p>
+                                    <cite><small><p>
                                             Robison, K., McGuire, A. M., Church, G. M. A comprehensive library of 
                                             DNA-binding site matrices for 55 proteins applied to the complete <i>Escherichia coli</i> K12 genome. Journal of Molecular Biology (1998) 284, 241-254. 
                                         </cite></small></p>
-                                    </div> <!--close text div-->
-          
-                                    <div class="edit-logo-btn"><!--Edit logo button for 58 CAP binding Sites container-->
-                                        <form method="post" action="create.cgi"> 
-                                            <button class="btn btn-default" type="submit" id="edit-logo-btn" name="cmd_edit" value="Edit Logo">Edit Logo</button> 58 CAP Binding Sites
-                                            <input type="hidden" name="first_index" value="-10" >
-                                            <input type="hidden" name="show_xaxis" value="true" >
-                                            <input type="hidden" name="show_yaxis" value="true" >
-                                            <input type="hidden" name="show_errorbars" value="true" >
-                                            <input type="hidden" name="show_fineprint" value="true" >
-                                            <input type="hidden" name="scale_width" value="true" >
-                                            <input type="hidden" name="logo_title" value="58 CAP Binding Sites" >
-                                            <input type="hidden" name="stack_width" value="large" >
-                                            <input type="hidden" name="sequences" value="
+                                </div>
+                                <!--close text div-->
+                                <div class="edit-logo-btn">
+                                    <!--Edit logo button for 58 CAP binding Sites container-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" id="edit-logo-btn" name="cmd_edit" value="Edit Logo">Edit Logo</button> 58 CAP Binding Sites
+                                        <input type="hidden" name="first_index" value="-10">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="logo_title" value="58 CAP Binding Sites">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="sequences" value="
                                               >aldB -18->4
                                               attcgtgatagctgtcgtaaag
                                               >ansB 103->125
@@ -482,42 +490,52 @@
                                               aactgtgaaacgaaacatattt
                                               >uxuAB 165->187
                                               TCTTGTGATGTGGTTAACCAAT
-                                              " >
-                                        </form>
-                                    </div><!--close Edit logo button for 58 CAP binding Sites container-->
-            
-                                </div> <!-- close CAP column right container-->
-                            </div> <!--Close CAP row container-->
-
-                            <div id="padding-div"><hr></div>
-
-                            <div class="row"><a name="trans"></a> <!--start E.Coli Transcription row container-->
-                                <!--why aren't div markers E.Coli Transcription row container matching up in linter????????!!!!-->
-                                <div class="col-sm-6" id="weblogo-examples"> <!--E.coli column col-sm-6 left container -->
-                                    <a name="LexA"></a><h3><i>E. coli</i> Transcription Factor Binding Sites</h3>
-                                    <div class="image-div"><a href="examples/lexA.png" data-fluidbox> <img src="examples/lexA.png" class="img-responsive" alt="LexA repressor"></a>
-                                    </div>
-                                    
-                                    <div class="text-div"> <!--start LexA text div-->     
-                                        The following logos (along with the <a href="#CAP">CAP logo</a> above) display a selection of <i>E. coli</i> transcription factor binding sites determined  by DNA footprinting. This data has been collated in the  <a href="http://arep.med.harvard.edu/dpinteract/">DPInteract</a> database and has been used to  <a href="http://arep.med.harvard.edu/ecoli_matrices/">search for additional binding sites</a> within the <i>E. coli</i> genome.
-
-                                        <a name="footprinting"></a> <cite> Robison, K., McGuire, A. M., Church, G. M. A comprehensive library of DNA-binding site matrices for 55 proteins applied to the complete <i>Escherichia coli</i> K12 genome. Journal of Molecular Biology (1998) 284, 241-254. 
-                                        </cite>                    
-                                    </div> <!--close LexA text-div-->
-
-                                    <div class="edit-logo-btn" ><a name="LexA"> </a><!--LexA button start-->
-                                        <form method="post" action="create.cgi"> 
-                                            <div id="button"><button class="btn btn-default" type="submit" name="cmd_edit">Edit Logo</button>
-                                                <span class="btn-description">LexA repressor is closely related to CAP, and has similar DNA protein interactions.</span></div>
-                                                <input type="hidden" name="logo_title" value="19 LexA Binding Sites" >
-                                                <input type="hidden" name="stack_width" value="large" >
-                                                <input type="hidden" name="first_index" value="-9" >
-                                                <input type="hidden" name="show_xaxis" value="true" >
-                                                <input type="hidden" name="show_yaxis" value="true" >
-                                                <input type="hidden" name="show_errorbars" value="true" >
-                                                <input type="hidden" name="show_fineprint" value="true" >
-                                                <input type="hidden" name="scale_width" value="true" >
-                                                <input type="hidden" name="sequences" value="
+                                              ">
+                                    </form>
+                                </div>
+                                <!--close Edit logo button for 58 CAP binding Sites container-->
+                            </div>
+                            <!-- close CAP column right container-->
+                        </div>
+                        <!--Close CAP row container-->
+                        <div id="padding-div">
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <a name="trans"></a>
+                            <!--start E.Coli Transcription row container-->
+                            <!--why aren't div markers E.Coli Transcription row container matching up in linter????????!!!!-->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <!--E.coli column col-sm-6 left container -->
+                                <a name="LexA"></a>
+                                <h3><i>E. coli</i> Transcription Factor Binding Sites</h3>
+                                <div class="image-div">
+                                    <a href="examples/lexA.png" data-fluidbox> <img src="examples/lexA.png" class="img-responsive" alt="LexA repressor"></a>
+                                </div>
+                                <div class="text-div">
+                                    <!--start LexA text div-->
+                                    The following logos (along with the <a href="#CAP">CAP logo</a> above) display a selection of <i>E. coli</i> transcription factor binding sites determined by DNA footprinting. This data has been collated in the <a href="http://arep.med.harvard.edu/dpinteract/">DPInteract</a> database and has been used to <a href="http://arep.med.harvard.edu/ecoli_matrices/">search for additional binding sites</a> within the <i>E. coli</i> genome.
+                                    <a name="footprinting"></a>
+                                    <cite> Robison, K., McGuire, A. M., Church, G. M. A comprehensive library of DNA-binding site matrices for 55 proteins applied to the complete <i>Escherichia coli</i> K12 genome. Journal of Molecular Biology (1998) 284, 241-254.
+                                    </cite>
+                                </div>
+                                <!--close LexA text-div-->
+                                <div class="edit-logo-btn">
+                                    <a name="LexA"> </a>
+                                    <!--LexA button start-->
+                                    <form method="post" action="create.cgi">
+                                        <div id="button">
+                                            <button class="btn btn-default" type="submit" name="cmd_edit">Edit Logo</button>
+                                            <span class="btn-description">LexA repressor is closely related to CAP, and has similar DNA protein interactions.</span></div>
+                                        <input type="hidden" name="logo_title" value="19 LexA Binding Sites">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-9">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                                     >dinD 32->52
                                                     aactgtatataaatacagtt
                                                     >dinG 15->35 
@@ -555,26 +573,27 @@
                                                     >uvrB 75->95
                                                     aactgtttttttatccagta
                                                     >uvrD 57->77
-                                                    atctgtatatatacccagct" >
-                                        </form>
-                                    </div> <!--LexA button end-->
-                                
-                                    <div class="edit-logo-btn"> <a name="hns"></a>  <!--H-NS button section start-->
-                                        <form method="post" action="create.cgi"> 
-                                            <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button>
-                                            H-NS: Histone like, nucleoid-associated DNA-binding protein.
-
-                                            <!--<img alt ="" src="examples/hns.png" >-->
-                                            <input type="hidden" name="logo_title" value="15 hns Binding Sites" >
-                                            <input type="hidden" name="stack_width" value="large" >
-                                            <input type="hidden" name="first_index" value="-1" >
-                                            <input type="hidden" name="logo_start" value="1" >
-                                            <input type="hidden" name="show_xaxis" value="true" >
-                                            <input type="hidden" name="show_yaxis" value="true" >
-                                            <input type="hidden" name="show_errorbars" value="true" >
-                                            <input type="hidden" name="show_fineprint" value="true" >
-                                            <input type="hidden" name="scale_width" value="true" >
-                                            <input type="hidden" name="sequences" value="
+                                                    atctgtatatatacccagct">
+                                    </form>
+                                </div>
+                                <!--LexA button end-->
+                                <div class="edit-logo-btn">
+                                    <a name="hns"></a>
+                                    <!--H-NS button section start-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button>
+                                        H-NS: Histone like, nucleoid-associated DNA-binding protein.
+                                        <!--<img alt ="" src="examples/hns.png" >-->
+                                        <input type="hidden" name="logo_title" value="15 hns Binding Sites">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-1">
+                                        <input type="hidden" name="logo_start" value="1">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                               >hns1
                                               tAGGCTGATTT
                                               >hns2
@@ -604,25 +623,25 @@
                                               >hns14
                                               cTGGCTAATTT
                                               >hns15
-                                              aCAACTGAATT" >
-                                        </form>
-                                    </div><!--H-NS button section end-->
-                                          
-                                    <div class="edit-logo-btn"><a name="dnaA"></a><!--dnaA button section start-->
-                                
+                                              aCAACTGAATT">
+                                    </form>
+                                </div>
+                                <!--H-NS button section end-->
+                                <div class="edit-logo-btn">
+                                    <a name="dnaA"></a>
+                                    <!--dnaA button section start-->
                                     <!--<img alt="" src="examples/dnaA.png" >-->
-
-                                        <form method="post" action="create.cgi">
-                                            <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> DNA biosynthesis initiation binding protein.
-                                            <input type="hidden" name="logo_title" value="8 dnaA Binding Sites" >
-                                            <input type="hidden" name="stack_width" value="large" >
-                                            <input type="hidden" name="logo_end" value="14" >
-                                            <input type="hidden" name="show_xaxis" value="true" >
-                                            <input type="hidden" name="show_yaxis" value="true" >
-                                            <input type="hidden" name="show_errorbars" value="true" >
-                                            <input type="hidden" name="show_fineprint" value="true" >
-                                            <input type="hidden" name="scale_width" value="true" >
-                                            <input type="hidden" name="sequences" value="
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> DNA biosynthesis initiation binding protein.
+                                        <input type="hidden" name="logo_title" value="8 dnaA Binding Sites">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="logo_end" value="14">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                               >dnaA_1 rpoH-1
                                               aatttattcacaagc
                                               >dnaA_2 rpoH-2
@@ -638,24 +657,25 @@
                                               >dnaA_7 oriC-R4
                                               gagttatccacagta
                                               >dnaA_10   dnaA
-                                              gatttatccacagga" >
-                                        </form>
-                                    </div><!--dnaA button section end-->
-                              
-                                 
-                                    <div class="edit-logo-btn"><a name="argR"></a><!--argR button function start-->
-                                        <!-- <img alt ="" src="examples/argR.png" > -->
-                                        <form method="post" action="create.cgi">
-                                            <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Arginine Repressor
-                                            <input type="hidden" name="logo_title" value="17 ArgR Binding Sites" >
-                                            <input type="hidden" name="stack_width" value="large" >
-                                            <input type="hidden" name="first_index" value="-8" >
-                                            <input type="hidden" name="show_xaxis" value="true" >
-                                            <input type="hidden" name="show_yaxis" value="true" >
-                                            <input type="hidden" name="show_errorbars" value="true" >
-                                            <input type="hidden" name="show_fineprint" value="true" >
-                                            <input type="hidden" name="scale_width" value="true" >
-                                            <input type="hidden" name="sequences" value="
+                                              gatttatccacagga">
+                                    </form>
+                                </div>
+                                <!--dnaA button section end-->
+                                <div class="edit-logo-btn">
+                                    <a name="argR"></a>
+                                    <!--argR button function start-->
+                                    <!-- <img alt ="" src="examples/argR.png" > -->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Arginine Repressor
+                                        <input type="hidden" name="logo_title" value="17 ArgR Binding Sites">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-8">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                                 >argA-1 32->50
                                                 acagaataaaaatacact
                                                 >argA-2 11->29 
@@ -689,50 +709,52 @@
                                                 >carAB-1 32->50
                                                 tgtgaattaatatgcaaa
                                                 >carAB-2 11->29
-                                                agtgagtgaatattctct" >
-                                        </form>
-                                    </div> <!--argR button function end-->          
-                            
-                                </div> <!--close Ecoli column col-sm-6 left container-->
-
-                                <div class="col-sm-6" id="weblogo-examples"><a name="promoters" ></a><!--start E. Coli col-sm-6 right container-->       <!--why aren't div markers E. Coli col-sm-6 right containermatching up in linter????????!!!!-->                        
-                                    <h3><i>E. coli</i> Promoters (Transcription Start Signals)</h3>                                    
-                                    <div class ="image-div"> <a href="examples/ecoli10.png" data-fluidbox><img src="examples/ecoli10.png" class="img-responsive" alt="E. coli Promotor logo"></a>
-                                    </div>
-                                            
-                                    <div class="text-div"><!--start E.coli Promotor text-->
-                                            In prokaryotes the DNA sequence just upstream of the transcription start point contains two important conserved regions. The first such region is centered at around 35bp upstream and is involved in the initial recognition of the gene by RNA polymerase. 
-                                                <!--The consensus sequence is TTGACAT, but the logo
-                                                indicates that a great deal of variation occurs. --> 
-                                                <p></p>
-                                            The second region, sometimes
-                                            referred to as the Pribnow box, is centered at about 10bp upstream. The typical
-                                            separation between the -35 and -10 sites is 15-18 bp. 
-                                            <p></p>        
-                                            <a class="out" href="http://www.lecb.ncifcrf.gov/~toms/papers/baseflip/">baseflip: 
+                                                agtgagtgaatattctct">
+                                    </form>
+                                </div>
+                                <!--argR button function end-->
+                            </div>
+                            <!--close Ecoli column col-sm-6 left container-->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <a name="promoters"></a>
+                                <!--start E. Coli col-sm-6 right container-->
+                                <!--why aren't div markers E. Coli col-sm-6 right containermatching up in linter????????!!!!-->
+                                <h3><i>E. coli</i> Promoters (Transcription Start Signals)</h3>
+                                <div class="image-div">
+                                    <a href="examples/ecoli10.png" data-fluidbox><img src="examples/ecoli10.png" class="img-responsive" alt="E. coli Promotor logo"></a>
+                                </div>
+                                <div class="text-div">
+                                    <!--start E.coli Promotor text-->
+                                    In prokaryotes the DNA sequence just upstream of the transcription start point contains two important conserved regions. The first such region is centered at around 35bp upstream and is involved in the initial recognition of the gene by RNA polymerase.
+                                    <!--The consensus sequence is TTGACAT, but the logo
+                                                indicates that a great deal of variation occurs. -->
+                                    <p></p>
+                                    The second region, sometimes referred to as the Pribnow box, is centered at about 10bp upstream. The typical separation between the -35 and -10 sites is 15-18 bp.
+                                    <p></p>
+                                    <a class="out" href="http://www.lecb.ncifcrf.gov/~toms/papers/baseflip/">baseflip: 
                                             Strong Minor Groove Base Conservation in Sequence Logos
                                             implies DNA Distortion or Base Flipping during Replication and
-                                            Transcription Initiation</a> for more information. This sequence data was kindly provided by Prof. Julia Brettschneider &lt;juliab@stat.berkeley.edu&gt; 
-                                    </div><!--close E.coli Promotor text-->   
-
-                                    <!--why aren't div markers .coli promoters button function matching up in linter????????!!!!
-                                    doesn't see</form>?? doesn't see </div for promoters button?? doesn't -->    
-                      
-                                    <div class="edit-logo-btn" id="ecoli-promoters-btn"> <!--start E.coli promoters button function-->
-                                        <form method="post" action="create.cgi">
-                                            <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo
-                                            </button> The -10 region of 350 E. coli promoters
-                                                <input type="hidden" name="logo_title" value="-10 region of 3E. coli promoters" >
-                                                <input type="hidden" name="stack_width" value="large" >
-                                                <input type="hidden" name="first_index" value="-21" >
-                                                <input type="hidden" name="logo_start" value="0" >
-                                                <input type="hidden" name="logo_end" value="7" >
-                                                <input type="hidden" name="show_xaxis" value="true" >
-                                                <input type="hidden" name="show_yaxis" value="true" >
-                                                <input type="hidden" name="show_errorbars" value="true" >
-                                                <input type="hidden" name="show_fineprint" value="true" >
-                                                <input type="hidden" name="scale_width" value="true" >
-                                                <input type="hidden" name="sequences" value=" >
+                                            Transcription Initiation</a> for more information. This sequence data was kindly provided by Prof. Julia Brettschneider &lt;juliab@stat.berkeley.edu&gt;
+                                </div>
+                                <!--close E.coli Promotor text-->
+                                <!--why aren't div markers .coli promoters button function matching up in linter????????!!!!
+                                    doesn't see</form>?? doesn't see </div for promoters button?? doesn't -->
+                                <div class="edit-logo-btn" id="ecoli-promoters-btn">
+                                    <!--start E.coli promoters button function-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo
+                                        </button> The -10 region of 350 E. coli promoters
+                                        <input type="hidden" name="logo_title" value="-10 region of 3E. coli promoters">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-21">
+                                        <input type="hidden" name="logo_start" value="0">
+                                        <input type="hidden" name="logo_end" value="7">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value=" >
                                                     The -10 hexamers of 350 E.coli promoters gatgacgtggtttacgaccccaTTTAGTagtcaaccgcagtgagtgagtc 
                                                     >
                                                     ttgaaaccagacgtttcgccccTATTACagactcacaaccacatgatgac
@@ -1432,39 +1454,46 @@
                                                     gccagaagcaatggatacaaggTAGCCTcatgcgttattttccctgcttc
                                                     >
                                                     ttactgatccgcacgtttatgaTATGCTatcgtactctttagcgagtaca
-                                                    " >
-                                        </form>
-                                    </div><!--close E.coli promoters button-->
-                                
-                                </div> <!--close E.Col col-sm-6 right container-->
-                            </div> <!--close E.Coli Transcription row container-->
-                            
-                            <div id="padding-div"><hr></div>
-
-                            <div class="row" id="globins-hth"> <!--start Globins and HTH Proteins Row Container-->
-
-                                <div class="col-sm-6" id="weblogo-examples"><!--start Globins Container Col sm 6 left-->
-                                    <h3>Globins</h3><a name="globins"></a>
-                                    <div class ="image-div"> <a href="examples/globins.png" data-fluidbox> <img src="examples/globins.png" class="img-responsive" alt="Responsive image" ></a></div>
-                                    <div class ="text-div"> 
-                                                The end of the B helix through the beginning of the D helix of 34 globins. This 
-                                                sequence data was taken from 
-                                                <a href="http://www.lecb.ncifcrf.gov/~toms/paper/logopaper/">Sequence Logos: A New Way to Display Consensus Sequences</a>.
-                                    </div><!--end text div-->
-
-                                    <div id="spacing-row"> <p></p></div>
-                                            
-                                    <div class="edit-logo-btn" id="globins"> <!--start globins button -->
-                                        <form method="post" action="create.cgi">                 
-                                            <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Globins
-                                                <input type="hidden" name="logo_start" value="61" >
-                                                <input type="hidden" name="logo_end" value="83" >
-                                                <input type="hidden" name="show_xaxis" value="true" >
-                                                <input type="hidden" name="show_yaxis" value="true" >
-                                                <input type="hidden" name="show_errorbars" value="true" >
-                                                <input type="hidden" name="show_fineprint" value="true" >
-                                                <input type="hidden" name="scale_width" value="true" >
-                                                <input type="hidden" name="sequences" value="
+                                                    ">
+                                    </form>
+                                </div>
+                                <!--close E.coli promoters button-->
+                            </div>
+                            <!--close E.Col col-sm-6 right container-->
+                        </div>
+                        <!--close E.Coli Transcription row container-->
+                        <div id="padding-div">
+                            <hr>
+                        </div>
+                        <div class="row" id="globins-hth">
+                            <!--start Globins and HTH Proteins Row Container-->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <!--start Globins Container Col sm 6 left-->
+                                <h3>Globins</h3>
+                                <a name="globins"></a>
+                                <div class="image-div">
+                                    <a href="examples/globins.png" data-fluidbox> <img src="examples/globins.png" class="img-responsive" alt="Responsive image"></a>
+                                </div>
+                                <div class="text-div">
+                                    The end of the B helix through the beginning of the D helix of 34 globins. This sequence data was taken from
+                                    <a href="http://www.lecb.ncifcrf.gov/~toms/paper/logopaper/">Sequence Logos: A New Way to Display Consensus Sequences</a>.
+                                </div>
+                                <!--end text div-->
+                                <div id="spacing-row">
+                                    <p></p>
+                                </div>
+                                <div class="edit-logo-btn" id="globins">
+                                    <!--start globins button -->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Globins
+                                        <input type="hidden" name="logo_start" value="61">
+                                        <input type="hidden" name="logo_end" value="83">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                                     >Lamprey GLOBIN V - SEA LAMPREY
                                                     PIVDTGSVA-P------------------LSAAEKTKIRSAWAPVYSTY---ETSGVDILVKFFTSTPAAQEFFPKFKGL
                                                     TT-----ADQLKKSA---DVRWHA-ERIINAVNDAVASMDDTEKMS--MKL-RDLSGKH----AKSFQV-----DPQYFK
@@ -1689,38 +1718,41 @@
                                                     ----------G------------------AFTEKQEALV---NSSWEAF---KGNIPQYSVVFYTSILEKAPAAKNLFSF
                                                     LA-----NGV-DPT--NPKLTAHAESLFGLVRDSAAQLRANGAVVA--DAAL---GSIH--SQKGVSNDQFLVVKEALLK
                                                     TLKQAV-GD-KWTDQL-STALELAYDE------L---AAAIK----K---------------------AYA
-                                                    " >
-                                        </form>
-                                    </div> <!--close globins button-->
-                                </div><!--close globin container col sm 6 left-->
-                  
-                            
-                                <div class="col-sm-6" id="weblogo-examples"> <a name="HTH"></a><!--start globin-HTH column  sm 6 right container --> 
-                                    <h3>HTH Proteins</h3>
-                                    <div class ="image-div"> 
-                                            <a href="examples/hth.png" data-fluidbox> <img src="examples/hth.png" class="img-responsive" alt="Responsive image"> 
-                                    </div>
-                               
-                                    <div class ="text-div"><!--start text div-->
-                                            Helix-Turn-Helix DNA binding motifs found by the Gibbs sampling system. Compared to the 
-                                            <a href="#CAP_HTH">CAP HTH logo</a> there is much less sequence conservation within the DNA binding helix (11-17), as might be expected for a diverse sample of proteins.
-                                    </div> <!--close text div-->
-
-                                    <div class="edit-logo-btn" id="hth"> <!--start HTH button section-->
-                                            <form method="post" action="create.cgi">                         
-                                                <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> HTH Proteins
-                                                    <input type="hidden" name="logo_title" value ="Helix-Turn-Helix Motifs" >
-                                                    <input type="hidden" name="stack_width" value="large" >
-                                                    <input type="hidden" name="first_index" value ="-11" >
-                                                    <input type="hidden" name="logo_start" value ="1" >
-                                                    <input type="hidden" name="logo_end" value ="17" >
-                                                    <input type="hidden" name="yaxis_scale" value ="2.0" >
-                                                    <input type="hidden" name="show_xaxis" value="true" >
-                                                    <input type="hidden" name="show_yaxis" value="true" >
-                                                    <input type="hidden" name="show_errorbars" value="true" >
-                                                    <input type="hidden" name="show_fineprint" value="true" >
-                                                    <input type="hidden" name="scale_width" value="true" >
-                                                    <input type="hidden" name="sequences" value=">A25944 DNA-directed 
+                                                    ">
+                                    </form>
+                                </div>
+                                <!--close globins button-->
+                            </div>
+                            <!--close globin container col sm 6 left-->
+                            <div class="col-sm-6" id="weblogo-examples">
+                                <a name="HTH"></a>
+                                <!--start globin-HTH column  sm 6 right container -->
+                                <h3>HTH Proteins</h3>
+                                <div class="image-div">
+                                    <a href="examples/hth.png" data-fluidbox> <img src="examples/hth.png" class="img-responsive" alt="Responsive image">
+                                </div>
+                                <div class="text-div">
+                                    <!--start text div-->
+                                    Helix-Turn-Helix DNA binding motifs found by the Gibbs sampling system. Compared to the
+                                    <a href="#CAP_HTH">CAP HTH logo</a> there is much less sequence conservation within the DNA binding helix (11-17), as might be expected for a diverse sample of proteins.
+                                </div>
+                                <!--close text div-->
+                                <div class="edit-logo-btn" id="hth">
+                                    <!--start HTH button section-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> HTH Proteins
+                                        <input type="hidden" name="logo_title" value="Helix-Turn-Helix Motifs">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-11">
+                                        <input type="hidden" name="logo_start" value="1">
+                                        <input type="hidden" name="logo_end" value="17">
+                                        <input type="hidden" name="yaxis_scale" value="2.0">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value=">A25944 DNA-directed 
                                                     RNA polymerase sigma-37 chain - Bacillu 223-240
                                                       iidltyiqnk SQKETGDILGISQMHVSR lqrkavkklr  
                                                       >A28627 spoIIIC protein - Bacillus subtilis  94-111
@@ -1781,48 +1813,58 @@
                                                       dhisqtgmpp TRAEIAQRLGFRSPNAAE ehlkalarkg   
                                                       >Z1BPC2 Regulatory protein cI - Phage P22 | 1559.0 1.0 1.0 1  25-42
                                                       ssilnriair GQRKVADALGINESQISR wkgdfipkmg
-                                                      " >
-                                            </form>
-                                     </div><!--close HTH button function-->
-                      
-                                </div><!--close globin-HTH column 6 right container-->
-
-                            </div><!--close Globins and HTH Proteins Row Container-->
-
-
-                            <div id="padding-div"><hr></div>
-
-                            <div class="row" id="weblogo-examples"><a name="splice"></a> <!--Human Splice Site Row Container-->
-                                <div class="col-sm-12">
-                                    <h3>Human Splice Sites</h3>                
-                                    <div class="text-div"><!--start text div-->
-                                        These logos show a small sample of Human intron-exon splice boundaries. Sequences of experimentally confirmed genes were extracted from EID: the Exon-Intron database.
-                                        <p></p>
-                                        Additional discussion of the features in this logo can be found in the paper
-                                        <a href="http://www.lecb.ncifcrf.gov/~toms/paper/splice/"> Features of spliceosome evolution...</a>
-                                    </div> <!--close text div-->
-                                    <div class="row" id="padding-div"><p></p></div>
-                                </div><!--close col-sm-12 container-->
-
-                                <div id="padding-div"><hr></div>
-
-                                    <div class="col-sm-6"> <!--human splice site exon|intron column left-->
-                                        <div class="image-div"><a href= "examples/exon-intron.png" data-fluidbox>  <img src="examples/exon-intron.png" class="img-responsive" alt="exon-intron image"></a></div>
-
-                                        <div class="edit-logo-btn"><!-- exon|intron button start-->
-                                            <form method="post" action="create.cgi">
-                                                <button class="btn btn-default"  type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Exon-Intron (Donor) Sites        
-                                                    <input type="hidden" name="logo_title" value="exon | intron" >
-                                                    <input type="hidden" name="stack_width" value="large" >
-                                                    <input type="hidden" name="first_index" value="-11" >
-                                                    <input type="hidden" name="logo_start" value="-6" >
-                                                    <input type="hidden" name="logo_end" value="8" >
-                                                    <input type="hidden" name="show_xaxis" value="true" >
-                                                    <input type="hidden" name="show_yaxis" value="true" >
-                                                    <input type="hidden" name="show_errorbars" value="true" >
-                                                    <input type="hidden" name="show_fineprint" value="true" >
-                                                    <input type="hidden" name="scale_width" value="true" >
-                                                    <input type="hidden" name="sequences" value="
+                                                      ">
+                                    </form>
+                                </div>
+                                <!--close HTH button function-->
+                            </div>
+                            <!--close globin-HTH column 6 right container-->
+                        </div>
+                        <!--close Globins and HTH Proteins Row Container-->
+                        <div id="padding-div">
+                            <hr>
+                        </div>
+                        <div class="row" id="weblogo-examples">
+                            <a name="splice"></a>
+                            <!--Human Splice Site Row Container-->
+                            <div class="col-sm-12">
+                                <h3>Human Splice Sites</h3>
+                                <div class="text-div">
+                                    <!--start text div-->
+                                    These logos show a small sample of Human intron-exon splice boundaries. Sequences of experimentally confirmed genes were extracted from EID: the Exon-Intron database.
+                                    <p></p>
+                                    Additional discussion of the features in this logo can be found in the paper
+                                    <a href="http://www.lecb.ncifcrf.gov/~toms/paper/splice/"> Features of spliceosome evolution...</a>
+                                </div>
+                                <!--close text div-->
+                                <div class="row" id="padding-div">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!--close col-sm-12 container-->
+                            <div id="padding-div">
+                                <hr>
+                            </div>
+                            <div class="col-sm-6">
+                                <!--human splice site exon|intron column left-->
+                                <div class="image-div">
+                                    <a href="examples/exon-intron.png" data-fluidbox> <img src="examples/exon-intron.png" class="img-responsive" alt="exon-intron image"></a>
+                                </div>
+                                <div class="edit-logo-btn">
+                                    <!-- exon|intron button start-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" value="Edit Logo">Edit Logo</button> Exon-Intron (Donor) Sites
+                                        <input type="hidden" name="logo_title" value="exon | intron">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-11">
+                                        <input type="hidden" name="logo_start" value="-6">
+                                        <input type="hidden" name="logo_end" value="8">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                                         > 19082_AF115399
                                                           GGATCGACCCTgtaagtttt
                                                           > 45328_AB000381
@@ -2020,31 +2062,36 @@
                                                           > 45345_AB002059
                                                           AACTTCTCTAAgtaagcaga
                                                           > 45345_AB002059
-                                                          TGGCGTTGCTGgtgggtccc" >                             
-                                            </form>
-                                        </div><!--close exon|intron button-->
-
-                                    </div><!--close human splice site exon|intron column left-->
-
-                                    <div class="col-sm-6"> <!--human splice site intron|exon column right-->
-
-                                        <div class="image-div"><a href="examples/intron-exon.png" data-fluidbox ><img src="examples/intron-exon.png" class="img-responsive" alt="Responsive image"> </a> </div>
-                                        <div id="padding-div"> <p></p></div>
-                                        <div class="edit-logo-btn"><!--intron|exon button start-->
-                                            <form method="post" action="create.cgi">
-                                                <button class="btn btn-default" type="submit" name="cmd_edit" action="create.cgi" method="post"> Edit Logo</button>
-                                                     Intron-Exon (Acceptor) Sites
-                                                    <input type="hidden" name="logo_title" value="intron | exon" >
-                                                    <input type="hidden" name="stack_width" value="large" >
-                                                    <input type="hidden" name="first_index" value="-21" >
-                                                    <input type="hidden" name="logo_start" value="-20" >
-                                                    <input type="hidden" name="logo_end" value="3" >
-                                                    <input type="hidden" name="show_xaxis" value="true" >
-                                                    <input type="hidden" name="show_yaxis" value="true" >
-                                                    <input type="hidden" name="show_errorbars" value="true" >
-                                                    <input type="hidden" name="show_fineprint" value="true" >
-                                                    <input type="hidden" name="scale_width" value="true" >
-                                                    <input type="hidden" name="sequences" value="
+                                                          TGGCGTTGCTGgtgggtccc">
+                                    </form>
+                                </div>
+                                <!--close exon|intron button-->
+                            </div>
+                            <!--close human splice site exon|intron column left-->
+                            <div class="col-sm-6">
+                                <!--human splice site intron|exon column right-->
+                                <div class="image-div">
+                                    <a href="examples/intron-exon.png" data-fluidbox><img src="examples/intron-exon.png" class="img-responsive" alt="Responsive image"> </a>
+                                </div>
+                                <div id="padding-div">
+                                    <p></p>
+                                </div>
+                                <div class="edit-logo-btn">
+                                    <!--intron|exon button start-->
+                                    <form method="post" action="create.cgi">
+                                        <button class="btn btn-default" type="submit" name="cmd_edit" action="create.cgi" method="post"> Edit Logo</button>
+                                        Intron-Exon (Acceptor) Sites
+                                        <input type="hidden" name="logo_title" value="intron | exon">
+                                        <input type="hidden" name="stack_width" value="large">
+                                        <input type="hidden" name="first_index" value="-21">
+                                        <input type="hidden" name="logo_start" value="-20">
+                                        <input type="hidden" name="logo_end" value="3">
+                                        <input type="hidden" name="show_xaxis" value="true">
+                                        <input type="hidden" name="show_yaxis" value="true">
+                                        <input type="hidden" name="show_errorbars" value="true">
+                                        <input type="hidden" name="show_fineprint" value="true">
+                                        <input type="hidden" name="scale_width" value="true">
+                                        <input type="hidden" name="sequences" value="
                                                       > 19082_AF115399
                                                       ttctctgaaatatgaatttagACTGGTACTTATCATGGAG
                                                       > 45328_AB000381
@@ -2245,69 +2292,66 @@
                                                       aaagctatgtgctatgtgcagGGTGGCTCTGTAGGCATCA
                                                       > 45345_AB002059
                                                       agccttctttcctgcccacagGACAGCCACTCACTGGTGG
-                                                      " >
-                                            </form>
-                                        </div><!--close intron|exon button-->
-
-                                    </div><!--close human splice site intron|exon column right-->
-
-                            </div> <!--close human splice site row container-->
-
-                            <div class="row" id="spacing-row"><hr></div> <!--offset for bottom margin-->
-                          
-                        </div><!--close Example Gallery col-sm-12 content column-->
-
-
-                    </div><!--Example Gallery Row Container-->
-
-                </div><!--close Central Body col-sm-10 column-->
-            
-                <div class="col-sm-1"></div>  <!--outer column margin right-->
-
-            </div><!--close outermost row container-->
-        
-        </div><!--close outermost "container-fluid" content container-->
-
-        <script type="text/javascript"> //fluidbox initialization function
-            $(function () {
-                $('a').fluidbox();
-            });
-        </script>
-
-        <!--fluidbox cdn-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/css/fluidbox.css"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.min.js"></script>
-
-            <!--fallback to server-hosted files in case CDNs fail-->
-    <script>
-
-      if (typeof jQuery == 'undefined') {
-          //fallback for JQuery
-          document.write(unescape("%3Cscript src='.../scripts/jquery-1.11.3/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
-
-          //fallback for Fluidbox
-          document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.js' type='text/javascript'%3E%3C/script%3E"));
-          document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.min.js' type='text/javascript'%3E%3C/script%3E"));
-
-          //fallback for Bootstrap
-          document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
-          document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"));
-          document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css' %3Clink")); 
-          document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css' %3Clink")); 
-          }
+                                                      ">
+                                    </form>
+                                </div>
+                                <!--close intron|exon button-->
+                            </div>
+                            <!--close human splice site intron|exon column right-->
+                        </div>
+                        <!--close human splice site row container-->
+                        <div class="row" id="spacing-row">
+                            <hr>
+                        </div>
+                        <!--offset for bottom margin-->
+                    </div>
+                    <!--close Example Gallery col-sm-12 content column-->
+                </div>
+                <!--Example Gallery Row Container-->
+            </div>
+            <!--close Central Body col-sm-10 column-->
+            <div class="col-sm-1"></div>
+            <!--outer column margin right-->
+        </div>
+        <!--close outermost row container-->
+    </div>
+    <!--close outermost "container-fluid" content container-->
+    <script type="text/javascript">
+    //fluidbox initialization function
+    $(function() {
+        $('a').fluidbox();
+    });
     </script>
-        
-        <!--google analytics-->
-        <script type="text/javascript">
-          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
+    <!--fluidbox cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/css/fluidbox.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.min.js"></script>
+    <!--fallback to server-hosted files in case CDNs fail-->
+    <script>
+    if (typeof jQuery == 'undefined') {
+        //fallback for JQuery
+        document.write(unescape("%3Cscript src='.../scripts/jquery-1.11.3/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
 
-        <script type="text/javascript">
-          var pageTracker = _gat._getTracker("UA-5951066-1");
-          pageTracker._trackPageview();
-        </script>
+        //fallback for Fluidbox
+        document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.min.js' type='text/javascript'%3E%3C/script%3E"));
 
-    </body>
+        //fallback for Bootstrap
+        document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css' %3Clink"));
+        document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css' %3Clink"));
+    }
+    </script>
+    <!--google analytics-->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5951066-1");
+    pageTracker._trackPageview();
+    </script>
+</body>
+
 </html>
