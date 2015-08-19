@@ -75,7 +75,9 @@
         <div class="row">
             <!--outermost row container-->
             <h1><p class="text-center"> WebLogo 3: Create</p></h1>
-            <form enctype="multipart/form-data" action="create.cgi" name="logoform" method="post">
+            <form enctype="multipart/form-data" action="cgi_test.py" name="logoform" method="post">
+
+            </form>
                 <!--start WebLogo form-->
                 <div class="row">
                     <!--open sequence data form row-->
@@ -109,67 +111,42 @@
                                 <div class="form-group col-sm-4" id="download-by-URL">
                                     <!--start URL download container div-->
 
-                                       
-            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">@getbootstrap/ open URL </button>
-            <!--start modal pop up-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+ 
 
-                  <div class="modal-header"><!--modal header-->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="exampleModalLabel">Open from URL</h4>
-                  </div> <!--end modal header-->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-transfer"></span> &nbsp&nbsp&nbsp Open URL</button>
 
-                  <div class="modal-body"> <!--data from modal goes here-->
-                    <form>
-                      <div class="form-group">
-                        <label for="recipient-name" class="control-label">Paste URL:</label>
-                        <input type="text" class="form-control" id="download-url">
-                      </div>
-                      <div class="form-group">
-                        <label for="message-text" class="control-label">Data:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
-                    </form>
-                  </div> <!--end data from modal goes here-->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-                  <div class="modal-footer"> <!--start modal footer-->
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Open URL</button>
-                  </div> <!--end modal footer-->
-                </div>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Open URL</h4>
+      </div>
+      <div class="modal-body">
 
-              </div>
-            </div> <!--end modal pop up-->
+        <form ACTION="http://localhost:8000/cgi_test.py" method= "POST">
+            <div class="form-group">
+                <label for="recipient-name" class="control-label">URL:</label>
+                <input type="text" class="form-control"  name="url-upload" placeholder="Paste URL Here">
+            </div>
 
-            <!--jquery to pass data from modal to python controller popup-->
-            <script>
-            $('#exampleModal').on('show.bs.modal', function (event) {
-              var button = $(event.relatedTarget) // Button that triggered the modal
-              var recipient = button.data('whatever') // Extract info from data-* attributes
-              // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-              // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-              {
-                $.ajax({
-                        url: ".../urllib_test.py",
-                        type: "GET", "POST"
-                        datatype:"text",
-                        data: modal.find("#download-url"),
-                        success: function(response){
-                            alert(response.message("url successfully sent"));
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button class="btn btn-success btn-md" type="submit" name="cmd_create">
+            <span class="glyphicon glyphicon-ok"></span> Create WebLogo
+        </button>
+      </div>
+    </div>
 
-                        success: function(response) {
-                            alert(response.message)
-                        }
+  </div>
+</div>
 
-                            
-              }
-              var modal = $(this)
-              modal.find('.modal-title').text('Open URL Here ')
-              modal.find('.modal-body input').val(recipient)
-            })
-            </script> <!--end jquery to pass data from modal popup//-->
+
 
                                                         
                                 </div> <!--end URL download container div-->
@@ -184,7 +161,7 @@
                             <!--close paste seqence data textbox-->
                             <div class="form-group row">
                                 <!--Start clearfix div for Download and Dropbox button-->
-                                <div class="col-sm-10">
+                                <div class="col-sm-8">
                                     <!--start create&clear button column-->
                                     <div class="form-group">
                                         <!--open create&clear button div-->
@@ -196,12 +173,12 @@
                                     <!-- end create&clear button div-->
                                 </div>
                                 <!--end .col-sm-6 create&clear button column-->
-                                <div class="col-sm-2">
+                                <div class="col-sm-4">
                                     <!--start spacing div for download/email checkboxes-->
                                     <div>
                                         <!--start download checkbox div-->
                                         <label>
-                                            <input type="checkbox" name="download" value="false">Download to local drive
+                                            <input type="checkbox" name="download" value="false">&nbsp Download to local drive
                                         </label>
                                     </div>
                                     <!--end download checkbox div div-->
@@ -219,22 +196,6 @@
                 </div>
                 <!--end sequence data form row-->
 
-                    <script>
-    if (typeof jQuery == 'undefined') {
-        //fallback for JQuery
-        document.write(unescape("%3Cscript src='.../scripts/jquery-1.11.3/jquery-1.11.3.min.js' type='text/javascript'%3E%3C/script%3E"));
-
-        //fallback for Fluidbox
-        document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.js' type='text/javascript'%3E%3C/script%3E"));
-        document.write(unescape("%3Cscript src='.../scripts/fluidbox/jjquery.fluidbox.min.js' type='text/javascript'%3E%3C/script%3E"));
-
-        //fallback for Bootstrap
-        document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
-        document.write(unescape("%3Cscript src='.../scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"));
-        document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css' %3Clink"));
-        document.write(unescape("%3Clink rel='stylesheet' src='.../scripts/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css' %3Clink"));
-    }
-    </script>
     <!--Google analytics-->
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
